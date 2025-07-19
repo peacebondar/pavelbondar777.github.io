@@ -20,7 +20,13 @@
   <p>Дякуємо за вашу підтримку миру в Україні!</p>
   <a href="https://send.monobank.ua/jar/5QvjBaMpDP" target="_blank" rel="noopener">
     <button>Зробити внесок</button>
-  </a>
+  </a><form action="https://www.paypal.com/donate" method="post" target="_blank">
+  <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL_OR_ID" />
+  <input type="hidden" name="no_recurring" value="0" />
+  <input type="hidden" name="item_name" value="Підтримка Миру" />
+  <input type="hidden" name="currency_code" value="USD" />
+  <input type="submit" value="Підтримати $1 через PayPal" />
+</form>
   <button id="downloadCert">Отримати сертифікат</button>
   <script>
     const pdf = `%PDF-1.4
