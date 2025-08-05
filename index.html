@@ -1,13 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Фонд Підтримка Миру</title>
+  <meta charset="UTF-8">
+  <title>Фонд "Підтримка Миру"</title>
   <style>
     body {
-      background-color: #f0f8ff;
+      background: #f4f4f4;
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 50px;
@@ -17,21 +15,18 @@
     }
     p {
       font-size: 18px;
-      color: #333;
-      max-width: 600px;
-      margin: auto;
+      margin-bottom: 30px;
     }
     .donate-btn {
       display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
-      font-size: 18px;
+      margin: 10px;
+      padding: 15px 25px;
+      font-size: 16px;
       background-color: #27ae60;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       text-decoration: none;
-      transition: 0.3s;
     }
     .donate-btn:hover {
       background-color: #219150;
@@ -39,13 +34,20 @@
   </style>
 </head>
 <body>
-  <h1>Фонд “Підтримка Миру”</h1>
-  <p>
-    Долучайтесь до нашої ініціативи — зробіть добровільний внесок у розмірі $1
-    та отримайте сертифікат учасника нашого фонду. Маленький крок — велика справа!
-  </p>
-  <a href="https://your-donation-link.com" class="donate-btn" target="_blank">
-    Зробити внесок $1
-  </a>
+  <h1>Фонд "Підтримка Миру"</h1>
+  <p>Зробіть добровільний внесок на підтримку миру 🙏</p>
+
+  <a class="donate-btn" href="https://send.monobank.ua/jar/5QvjBaMpDP" target="_blank">Зробити внесок через Monobank</a>
+  <br>
+  <form action="https://www.paypal.com/donate" method="post" target="_blank">
+    <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_HERE">
+    <input type="hidden" name="business" value="pavelbondar777@icloud.com">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="no_shipping" value="1">
+    <input type="hidden" name="no_note" value="1">
+    <input type="hidden" name="item_name" value="Donation to Support Peace">
+    <input type="hidden" name="cmd" value="_donations">
+    <input type="submit" value="Підтримати через PayPal (будь-яка сума)" class="donate-btn">
+  </form>
 </body>
 </html>
